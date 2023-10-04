@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Now Playing</h1>
+    </header>
+
+    <main>
+        <section id="music-player">
+            <div id="album-artwork">
+                <img src="album1.jpg" alt="Album Artwork">
+            </div>
+
+            <div id="music-info">
+                <h2>Song Title</h2>
+                <p>Artist: Artist Name</p>
+                <p>Album: Album Title</p>
+            </div>
+
+            <div id="controls">
+                <button id="prev-button">Previous</button>
+                <button id="play-button">Play</button>
+                <button id="next-button">Next</button>
+                <input type="range" id="volume-control" min="0" max="100" value="50">
+            </div>
+        </section>
+
+        <section id="queue">
+            <h2>Queue</h2>
+            <ul>
+                <li>Song 1</li>
+                <li>Song 2</li>
+                <li>Song 3</li>
+                <!-- Add more queued songs dynamically using JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Music Player</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file for functionality -->
+</body>
+</html>
